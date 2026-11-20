@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Ketua Program | Diploma Kejuruteraan Elektronik (Komputer)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* iframe full height */
+        body { overflow: hidden; }
+        .main-content { padding: 0; }
+        #content-frame { height: calc(100vh - 70px); }
+    </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+    <div class="header-left">
+        <div class="header-logo">P</div>
+        <div class="header-title">
+            <h1>Politeknik Sultan Idris Shah</h1>
+            <p>Diploma Kejuruteraan Elektronik (Komputer) &nbsp;|&nbsp; Dashboard Ketua Program</p>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="header-sesi">📅 Sesi I 2026/2027</div>
+        <div class="header-user">
+            <div class="avatar">KP</div>
+            <span>Ketua Program</span>
+        </div>
+    </div>
+</header>
+
+<!-- ===== LAYOUT ===== -->
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-section-label">Maklumat Program</div>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#" onclick="loadPage('study-plan', this); return false;">
+                        <span class="menu-icon">📋</span> Study Plan
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadPage('struktur-program', this); return false;">
+                        <span class="menu-icon">🗂️</span> Struktur Program
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadPage('course-info', this); return false;">
+                        <span class="menu-icon">📚</span> Course Information
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-label">Dokumen &amp; Muat Turun</div>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#" onclick="loadPage('jsu-pa', this); return false;">
+                        <span class="menu-icon">⬇️</span> JSU PA
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadPage('dok-pentaksiran', this); return false;">
+                        <span class="menu-icon">⬇️</span> Dok. Pentaksiran Sesi I
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-label">Laporan Staf</div>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#" onclick="loadPage('corr', this); return false;">
+                        <span class="menu-icon">📤</span> CORR
+                        <span class="menu-badge">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadPage('plorr', this); return false;">
+                        <span class="menu-icon">📤</span> PLORR
+                        <span class="menu-badge">2</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadPage('laporan-cqi', this); return false;">
+                        <span class="menu-icon">📊</span> Laporan CQI
+                        <span class="menu-badge">4</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-section-label">Penilaian</div>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#" onclick="loadPage('laporan-fpk', this); return false;">
+                        <span class="menu-icon">📄</span> Laporan Semakan FPK
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT (iframe) -->
+    <main class="main-content">
+        <iframe id="content-frame" src="pages/study-plan.html" title="Kandungan"></iframe>
+    </main>
+
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
